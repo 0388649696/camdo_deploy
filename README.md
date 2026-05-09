@@ -167,9 +167,9 @@ docker-compose exec django python manage.py createsuperuser
 ---
 
 ## 🔟 Kết quả
+<img width="1919" height="1024" alt="image" src="https://github.com/user-attachments/assets/9b20f511-dc2a-430f-b8e7-0683bd06d3d1" />
 
 * Home page hiển thị danh sách con nợ đến hạn.
-* Admin site quản lý dữ liệu các bảng, FK hiển thị text.
 * PhpMyAdmin kiểm chứng CS.
 * Tất cả chạy trên Docker, public qua Cloudflare Tunnel.
 
