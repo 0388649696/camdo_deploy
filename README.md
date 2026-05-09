@@ -24,6 +24,16 @@ camdo_django/
 └── db.sqlite3 (nếu dev thử bằng SQLite) hoặc dùng MariaDB container
 ```
 
+#### Giới thiệu hệ thống
+Hệ thống quản lý tiệm cầm đồ được xây dựng bằng:
+Django
+Docker
+phpMyAdmin
+Cloudflare Tunnel
+MariaDB
+Các service chính:django + mariadb + phpmyadmin
+
+
 
 
 
