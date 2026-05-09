@@ -173,11 +173,19 @@ docker-compose exec django python manage.py createsuperuser
 * PhpMyAdmin kiểm chứng CS.
 * Tất cả chạy trên Docker, public qua Cloudflare Tunnel.
 
+
+
+## **Kết luận**
 ---
-
+* Hệ thống **quản lý tiệm cầm đồ** đã được triển khai thành công trên **Docker** với các service **Django, MariaDB, phpMyAdmin**, kết hợp với **Nginx, Node-RED, Filebrowser và Cloudflare Tunnel**.
+* Việc sử dụng **Docker Compose** giúp quản lý và chạy toàn bộ stack đồng thời, dễ bảo trì và mở rộng.
+* **Django Admin** cung cấp giao diện trực quan để **thêm, sửa, xóa** dữ liệu bảng, đồng thời quản lý các **khách hàng, vật cầm, hợp đồng** với quan hệ **FK hiển thị text**, dễ kiểm chứng bằng **phpMyAdmin**.
+* **Template Jinja2** cho phép render danh sách **con nợ đến hạn**, minh họa luồng nghiệp vụ chính của hệ thống.
+* **Cloudflare Tunnel** cung cấp cách **public subdomain** an toàn, truy cập từ Internet mà không cần expose trực tiếp host port, đồng thời đảm bảo HTTPS.
+* Cách triển khai này **dễ demo, dễ chỉnh sửa bằng volume mount và sudo nano**, đồng thời có thể mở rộng, thêm tính năng hoặc dịch vụ mới mà không ảnh hưởng các service cũ.
+* Hệ thống này **tối ưu cho giảng dạy và trình bày**, minh họa toàn bộ luồng từ backend → frontend → public access, đồng thời duy trì tính bảo mật và modular.
+---
  
-
-
 
 
 
