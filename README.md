@@ -1,6 +1,7 @@
 # camdo_deploy
 
 #### Cấu trúc: 
+```
 camdo_django/
 ├── Dockerfile              # Dockerfile cho Django container
 ├── requirements.txt        # Thư viện Python cần thiết (Django, mysqlclient)
@@ -21,7 +22,7 @@ camdo_django/
 │       └── home.html       # Template Jinja2 cho home_page
 ├── manage.py               # Script chạy Django CLI
 └── db.sqlite3 (nếu dev thử bằng SQLite) hoặc dùng MariaDB container
-
+```
 
 
 
